@@ -6,10 +6,15 @@ An FAQ chatbot powered by a **knowledge graph + LLM**.
 - Frontend: React (Vite) for simple chat UI.
 
 ## Run locally
+##frontend
+cd frontend
+npm run dev
+
 
 ### Backend
-```bash
 cd backend
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+source venv/bin/activate
+uvicorn main:app --reload --port 8000
+
+
 
